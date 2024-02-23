@@ -1,0 +1,725 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  padding-top: 70px;
+}
+
+.main {
+  width: 100%;
+  /* background-color: #f5f5f5; */
+  padding: 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  border-bottom: 2px solid #ccc;
+  padding: 0 3.5vw;
+  background-color: whitesmoke; /* Set background color as needed */
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.8vw;
+  outline: none;
+}
+
+.search {
+  padding: 1vw;
+  padding-left: 6vw; /* Adjust based on the icon size */
+  width: 45vw; /* Adjust based on your design */
+  border: 1px solid #ccc;
+  background-color: #e6e6e6;
+  border-radius: 25px;
+  font-size: 1.5vw;
+  color: black;
+  /* outline: none; */
+  /* overflow: auto; */
+
+  /* background-color: aqua; */
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1.5vw;
+}
+
+.create-account button {
+  color: blue;
+  border: none;
+  padding: 1vw 1vw;
+  cursor: pointer;
+}
+
+.signup {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 4vw;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  display: none;
+}
+
+.loginpage {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 4vw;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  display: none;
+}
+
+.image-container {
+  margin-top: 1.5vw;
+  position: relative;
+  overflow: hidden;
+  height: 81vh;
+}
+
+.bg {
+  width: 100%;
+  filter: blur(5px);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.image-overlay h3 {
+  font-size: 2rem;
+}
+.content-container {
+  border-bottom: 1px solid #ccc;
+  margin-top: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 1.3vw;
+  text-align: center;
+}
+.left-content {
+  display: flex;
+  gap: 6vw;
+  text-align: left;
+}
+
+.right-content {
+  text-align: right;
+}
+.write {
+  font-size: 1.4vw;
+  padding: 0.7vw;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.write:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #ccc;
+}
+.join {
+  padding: 0.7vw;
+  font-size: 1.4vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(0, 94, 255);
+}
+.join:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: rgb(55, 55, 255);
+}
+.right-content button {
+  margin-left: 10px;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+/* .big_container {
+  height: calc(100% - 70px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+} */
+.card-container {
+  /* height: calc(100% - 70px); */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  justify-content: space-around;
+}
+
+.card {
+  width: 100%;
+  /* margin: 10px; */
+  margin-top: 5vw;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.post-details {
+  padding: 10px;
+}
+
+.post-details span {
+  font-weight: bold;
+}
+
+.post-details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-weight: 700;
+}
+.post_body {
+  font-weight: 700;
+}
+
+.post-details i {
+  color: black;
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userImg {
+  /* background-color: red; */
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  margin: 2vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.userImg img {
+  width: 40px; /* Adjust the width of the image as needed */
+  height: 40px; /* Adjust the height of the image as needed */
+  border-radius: 50%; /* Make it circular if desired */
+  margin-right: 10px; /* Add some spacing between the image and text */
+}
+.parallel {
+  display: flex;
+  flex-direction: row;
+}
+.date {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 6vw;
+}
+.visit_web {
+  width: 100%;
+  color: rgb(255, 111, 0);
+  font-size: 1.5vw;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.7vw 0;
+  margin-top: 0.5vw;
+  font-weight: 600;
+}
+.visit_web:hover {
+  background-color: rgb(255, 111, 0);
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+}
+.apply {
+  width: 100%;
+  color: rgb(2, 212, 93);
+  font-size: 1.5vw;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.7vw 0;
+  margin-top: 0.5vw;
+  font-weight: 600;
+}
+#brief {
+  font-weight: 100;
+  font-size: 2vw;
+  margin-right: 0.5vw;
+}
+.apply:hover {
+  background-color: rgb(2, 212, 93);
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+}
+.view_details {
+  display: flex;
+  align-items: center;
+}
+
+#view_btn {
+  margin: 2vw;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+
+#share_btn {
+  /* Assuming this is the class for the share icon */
+  /* Adjust the icon size as needed */
+  border: none;
+  border-radius: 3vw;
+}
+#share_icn {
+  font-weight: 500;
+  font-size: 2.5vw;
+  cursor: pointer;
+}
+
+.right-content {
+  text-align: right;
+}
+
+.right-content button {
+  margin-left: 10px;
+}
+.big_container {
+  display: flex;
+  flex-direction: row;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.7vw;
+  margin-top: 4vw;
+  /* background-color: #333; */
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#close {
+  font-size: 1.8vw;
+  cursor: pointer;
+}
+.right-container input {
+  padding: 1vw;
+  width: 20vw;
+  text-align: left;
+  margin-bottom: 1vw;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.rcmd {
+  letter-spacing: 0.3vw;
+  margin-bottom: 3vw;
+}
+.warning {
+  margin-top: 1vw;
+  flex-wrap: wrap;
+  margin-bottom: 3vw;
+}
+.right-container p {
+  text-align: center;
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  /* background-color: #e6e6e6; */
+}
+
+.groups div {
+  display: flex;
+  align-items: center;
+  margin: 1vw;
+}
+
+.groups img {
+  margin-right: 10px;
+}
+
+.followed,
+.follow {
+  margin-left: auto;
+}
+
+/* Additional styles for buttons (adjust as needed) */
+
+.follow {
+  background-color: rgb(210, 210, 210);
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.follow:hover {
+  background-color: rgb(169, 169, 169);
+  transition: background-color 0.5s ease-in-out;
+}
+.followed {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.small-nav {
+  /* padding: 10px; */
+  text-align: center;
+  display: block;
+  /* justify-content: center; */
+  width: 100%;
+  line-height: 4vw;
+  color: rgb(30, 153, 91);
+  background-color: rgb(239, 255, 244);
+  margin-bottom: 1vw;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vw;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6vw;
+}
+
+h5 {
+  display: flex;
+  align-items: center;
+}
+
+h4 button {
+  margin-left: 10px;
+}
+#signIn {
+  border: none;
+  color: blue;
+  cursor: pointer;
+  outline: none;
+}
+.left {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.single_line {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+  /* width: 4vw; */
+}
+.full_nm {
+  display: none;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  /* width: 4vw; */
+}
+input {
+  margin-bottom: 10px; /* Adjust as needed */
+  padding: 10px; /* Adjust as needed */
+}
+.submit_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+#create_acc {
+  background-color: blue;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 25px;
+}
+.submit_btns button {
+  font-size: 1.5vw;
+}
+#fb {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+#google {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+#frgt_pass {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.img {
+  margin-right: 10px;
+}
+.right {
+  width: 50%;
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.right_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.right_flex img {
+  width: 70%; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+.divider {
+  display: flex;
+  flex-direction: row;
+}
+#auth_closelogin {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5vw;
+  background-color: white;
+  cursor: pointer;
+}
+#auth_closesignup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5vw;
+  background-color: white;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .create-account {
+    display: none;
+  }
+  .search {
+    font-size: 4.2vw;
+    margin: 1.8vw;
+  }
+  .search-icon {
+    font-size: 4.2vw;
+  }
+  .bg {
+    filter: blur(3px);
+  }
+  .image-container {
+    height: 20vh;
+  }
+  .image-overlay {
+    position: absolute;
+    left: 25%;
+    line-height: 5.5vw;
+    /* font-size: 2.5vw; */
+  }
+  .image-overlay h3 {
+    font-size: 4.5vw;
+  }
+  .image-overlay h4 {
+    font-size: 2.5vw;
+  }
+  .card-container {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    overflow: auto;
+    /* flex-wrap: wrap; */
+  }
+  .post-details p {
+    font-weight: 500;
+    font-size: 4.6vw;
+    flex-wrap: wrap;
+  }
+  #brief {
+    font-size: 4.5vw;
+  }
+  #share_btn {
+    font-size: 4vw;
+  }
+  #share_icn {
+    font-size: 4vw;
+  }
+  #view_btn {
+    font-size: 4vw;
+  }
+  .apply {
+    font-size: 4.5vw;
+  }
+  .visit_web {
+    font-size: 4.5vw;
+  }
+  .left-content {
+    display: none;
+  }
+  .right-content {
+    display: none;
+  }
+  #dots {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 770px) {
+  .right-container {
+    display: none;
+  }
+  .card-container {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    overflow: auto;
+    /* flex-wrap: wrap; */
+  }
+}
+@media (max-width: 1150px) {
+  .signlog {
+    display: none;
+  }
+  .noo {
+    display: none;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 0%;
+  }
+  .row {
+    /* width: auto; */
+    /* justify-content: center;
+    align-items: center; */
+    width: 80%;
+    gap: 2vw;
+    margin: auto;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  .submit_btns {
+    width: 80%;
+    gap: 2vw;
+    margin: auto;
+    justify-content: center;
+  }
+  .footer {
+    display: none;
+  }
+  .last_nm {
+    display: none;
+  }
+  .first_nm {
+    display: none;
+  }
+  .full_nm {
+    display: block;
+    /* margin-left: 7vw;
+    width: 56.8vw; */
+  }
+}
+@media (max-width: 940px) {
+  .small-nav p {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .loginpage {
+    height: 70vh;
+  }
+  .signup {
+    height: 70vh;
+  }
+}
+@media (max-width: 600px) {
+  .loginpage {
+    width: 100%;
+    height: 80vh; /* Adjust the height as needed */
+    position: fixed;
+
+    background-color: white;
+    /* z-index: 1000; */
+  }
+}

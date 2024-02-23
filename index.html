@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="main">
+    <div class="navbar">
+      <img src="logo.png" alt="" class="logo">
+      <div class="search-container">
+        <input type="text" placeholder="Search your query.." class="search" />
+        <i class="ri-search-line search-icon"></i>
+      </div>
+
+      <p class="create-account">
+          <button id="login_btn" onclick="showLogin()">Log In</button>
+          <button id="signup_btn" onclick="showSignup()">Sign Up</button>
+      </p>
+    </div>
+
+    <div class="image-container">
+      <img src="./Rectangle 2.png" alt="" class="bg" />
+      <div class="image-overlay">
+        <h3>Computer Engineering</h3>
+        <h4>142,765 Computer Engineers follow this</h4>
+      </div>
+    </div>
+
+    <div class="content-container">
+      <div class="left-content">
+        <div>All Posts(32)</div>
+        <div>Article</div>
+        <div>Event</div>
+        <div>Job</div>
+      </div>
+    
+      <div class="right-content">
+        <button class="write">Write a Post</button>
+        <button class="join"><i class="ri-team-fill"></i>Join Group</button>
+      </div>
+    </div>
+
+    <div class="big_container">
+      <div class="card-container" id="left-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="Rectangle 5.png" alt="Card Image 1" />
+          <div class="post-details">
+            <span><i class="ri-briefcase-fill" id="brief"></i>Meetup</span>
+            <p>Finance & Investment Elite Social Mixer @Lujiazui <i class="ri-more-line" id="dots"></i></p>
+            
+            <div class="date">
+              <p> <i class="ri-calendar-fill" id="brief"></i>Fri,12,Oct,2018</p>
+              <p><i class="ri-map-pin-line"  id="brief"></i>Ahemdabad,India</p>
+            </div>
+            <button class="visit_web">Visit Website</button>
+            <div class="user-details">
+              <p class="userImg"><img src="sarah.png" alt="" > Sarah Alex</p>
+              <div class="view_details">
+                <i class="ri-eye-line" id="view_btn">1.4k views</i>
+                
+               <button id="share_btn"><i class="ri-share-line" id="share_icn"></i></button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        
+        <div class="card">
+          <img src="Rectangle 5-1.png" alt="Card Image 2" />
+          <div class="post-details">
+            <span><i class="ri-book-fill" id="brief"></i>Education</span>
+            <p class="post_body">Tax Benefits fir Investment under National Pension Scheme Launched by Government  <i class="ri-more-line" id="dots"></i></p>
+            <p>I've worked in UX for the better part of a decade.From now on, I plan to...</p>
+           
+            <div class="user-details">
+              <p class="userImg"><img src="ronal.png" alt="" > Ronal Shah</p>
+              <div class="view_details">
+                <i class="ri-eye-line" id="view_btn">1.4k views</i>
+                
+               <button id="share_btn"><i class="ri-share-line" id="share_icn"></i></button> 
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="Rectangle 5-2.png" alt="Card Image 3" />
+          <div class="post-details">
+            <span><i class="ri-article-line"  id="brief"></i>Article</span>
+            <p class="post_body">What if famous brands had regular fonts?Meet RegulaBrands! <i class="ri-more-line" id="dots"></i></p>
+            <p>I've worked in UX for the better part of a decade.From now on, I plan to...</p>
+            
+            <div class="user-details">
+              <p class="userImg"><img src="sarthak.png" alt="" > Sarthak Kamra</p>
+              <div class="view_details">
+                <i class="ri-eye-line" id="view_btn">1.4k views</i>
+                
+               <button id="share_btn"><i class="ri-share-line" id="share_icn"></i></button> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="post-details">
+            <span><i class="ri-briefcase-fill"  id="brief"></i>Job</span>
+            <p class="post_body">Software Developer <i class="ri-more-line" id="dots"></i></p>
+            
+            <div class="date">
+              <p> <i class="ri-shopping-bag-line" id="brief"></i> Innovacer Analytics Private Ltd.</p>
+              <p><i class="ri-map-pin-line" id="brief"></i>Noida,India</p>
+            </div>
+            <button class="apply">Apply on Template</button>
+            <div class="user-details">
+              <p class="userImg"><img src="joseph.png" alt="" > Joseph Gray</p>
+              <div class="view_details">
+                <i class="ri-eye-line" id="view_btn">1.4k views</i>
+                
+               <button id="share_btn"><i class="ri-share-line" id="share_icn"></i></button> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="wrap">
+        <i class="ri-map-pin-line" id="brief"></i> <input type="text" placeholder="Enter your location">
+        <i class="ri-close-line" id="close"></i>
+      </div>
+       <p class="warning"><i class="ri-error-warning-line"></i>Your location will help us serve better and extend a personalized experience.</p> 
+       <p class="rcmd"><i class="ri-thumb-up-line"></i> RECOMMENDED GROUPS</p>
+       <div class="groups">
+        <div class="1"><img src="Rectangle 6.png" alt="">Leisure <button class="followed">Followed</button></div>
+        <div class="2"><img src="Rectangle 6-1.png" alt="">Activism <button class="follow">Follow</button></div>
+        <div class="3"><img src="Rectangle 6-2.png" alt="">MBA <button class="follow">Follow</button></div>
+        <div class="4"><img src="Rectangle 6-3.png" alt="">Philosophy <button class="follow">Follow</button></div>
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- <div id="authpages"> -->
+  <div class="signup" >
+    <i class="ri-close-line" id="auth_closesignup"></i>
+    <div class="small-nav">
+      <p>
+        Let's learn, share & inspire each other with our passion for computer
+        engineering. Sign up now
+      </p>
+    </div>
+    <div class="flex-column">
+      <div class="flex-row">
+        <h2>Create Account</h2>
+        <h4 class="noo">Already have an account? <button id="signIn">Sign In</button></h4>
+      </div>
+    </div>
+    <div class="divider">
+    <div class="left">
+      <div class="single_line">
+        <input type="text" placeholder="First Name" class="first_nm"/>
+        <input type="text" placeholder="Last Name" class="last_nm"/>
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Name" class="full_nm"/>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+      </div>
+
+      <div class="submit_btns">
+        <button id="create_acc">Create Account</button>
+
+        <button id="fb">
+          <img src="fb.png" alt="" class="img" />Sign Up with Facebook
+        </button>
+        <button id="google">
+          <img src="google.png" alt="" class="img" />Sign Up with Google
+        </button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right_flex">
+        <img src="signlog.png" alt="" class="signlog"/>
+        <p class="footer">
+          By signing up,you agree to our Terms & Conditions,Privacy Policy.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="loginpage" >
+    <i class="ri-close-line" id="auth_closelogin"></i>
+    <div class="small-nav">
+      <p>
+        Let's learn, share & inspire each other with our passion for computer
+        engineering. Sign in now
+      </p>
+    </div>
+    <div class="flex-column">
+      <div class="flex-row">
+        <h2 >Sign In</h2>
+        <h4 class="noo">Don't have an account yet? <button id="signIn">Sign Up</button></h4>
+      </div>
+    </div>
+    <div class="divider">
+    <div class="left">
+      <div class="row">
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+      </div>
+
+      <div class="submit_btns">
+        <button id="create_acc">Sign In</button>
+
+        <button id="fb">
+          <img src="fb.png" alt="" class="img" />Sign In with Facebook
+        </button>
+        <button id="google">
+          <img src="google.png" alt="" class="img" />Sign In with Google
+        </button>
+        <button id="frgt_pass">
+          Forgot Password?
+        </button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right_flex">
+        <img src="signlog.png" alt="" class="signlog"/>
+        <!-- <p>
+          By signing up,you agree to our Terms & Conditions,Privacy Policy.
+        </p> -->
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+
+  <script src="index.js"></script>
+</body>
+</html>
