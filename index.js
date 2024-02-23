@@ -20,11 +20,4 @@ document
   .addEventListener("click", function () {
     document.querySelector(".signup").style.display = "none";
   });
-// Toggle function for the dropdown button
-// function toggleAuthPages() {
-//   var authPages = document.getElementById("authpages");
-//   authPages.style.display =
-//     authPages.style.display === "none" || authPages.style.display === ""
-//       ? "block"
-//       : "none";
-// }
+

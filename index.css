@@ -6,7 +6,6 @@
 
 body {
   font-family: Arial, sans-serif;
-
   padding-top: 70px;
 }
 
@@ -27,42 +26,61 @@ body {
   height: 70px;
   border-bottom: 2px solid #ccc;
   padding: 0 3.5vw;
-  background-color: whitesmoke; /* Set background color as needed */
-  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+  background-color: whitesmoke;
+  z-index: 1000;
 }
 
 .search-container {
   position: relative;
   display: inline-block;
-  margin-bottom: 0.8vw;
+  /* margin-bottom: 0.5vw; */
+  margin-top: 0.7vw;
   outline: none;
 }
 
 .search {
-  padding: 1vw;
-  padding-left: 6vw; /* Adjust based on the icon size */
-  width: 45vw; /* Adjust based on your design */
+  /* align-items: center; */
+  display: block;
+  /* padding: 1vw; */
+  padding-left: 6vw;
+  width: 45vw;
   border: 1px solid #ccc;
   background-color: #e6e6e6;
   border-radius: 25px;
   font-size: 1.5vw;
   color: black;
-  /* outline: none; */
-  /* overflow: auto; */
-
-  /* background-color: aqua; */
 }
 
 .search-icon {
   position: absolute;
   left: 10px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   color: black;
   font-size: 1.5vw;
 }
 
 .create-account button {
+  /* color: blue; */
+  color: rgb(30, 153, 91);
+  background-color: rgb(239, 255, 244);
+  border: none;
+  border-radius: 5px;
+  padding: 1vw 1vw;
+  cursor: pointer;
+}
+.create-account button:hover {
+  background-color: rgb(2, 212, 93);
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+.login_btn {
+  color: blue;
+  border: none;
+  padding: 1vw 1vw;
+  cursor: pointer;
+}
+.signup_btn {
   color: blue;
   border: none;
   padding: 1vw 1vw;
@@ -77,7 +95,7 @@ body {
   height: 90vh;
   margin: auto;
   margin-top: 4vw;
-  border-radius: 10px;
+  border-radius: 20px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -97,13 +115,13 @@ body {
   height: 90vh;
   margin: auto;
   margin-top: 4vw;
-  border-radius: 10px;
+  border-radius: 20px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(8px);
   display: none;
@@ -255,17 +273,17 @@ body {
 .userImg {
   /* background-color: red; */
   display: flex;
-  align-items: center; /* Align text and image vertically */
+  align-items: center;
   margin: 2vw;
   font-size: 1.5vw;
   font-weight: 600;
 }
 
 .userImg img {
-  width: 40px; /* Adjust the width of the image as needed */
-  height: 40px; /* Adjust the height of the image as needed */
-  border-radius: 50%; /* Make it circular if desired */
-  margin-right: 10px; /* Add some spacing between the image and text */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 .parallel {
   display: flex;
@@ -327,8 +345,6 @@ body {
 }
 
 #share_btn {
-  /* Assuming this is the class for the share icon */
-  /* Adjust the icon size as needed */
   border: none;
   border-radius: 3vw;
 }
@@ -412,8 +428,6 @@ body {
   margin-left: auto;
 }
 
-/* Additional styles for buttons (adjust as needed) */
-
 .follow {
   background-color: rgb(210, 210, 210);
   color: black;
@@ -495,8 +509,8 @@ h4 button {
   /* width: 4vw; */
 }
 input {
-  margin-bottom: 10px; /* Adjust as needed */
-  padding: 10px; /* Adjust as needed */
+  margin-bottom: 10px;
+  padding: 10px;
 }
 .submit_btns {
   display: flex;
@@ -538,20 +552,20 @@ input {
 }
 .right {
   width: 50%;
-  padding: 20px; /* Adjust padding as needed */
-  box-sizing: border-box; /* Ensure padding is included in the width */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .right_flex {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
 }
 
 .right_flex img {
-  width: 70%; /* Adjust image width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Adjust margin as needed */
+  width: 70%;
+  height: auto;
+  margin-bottom: 10px;
 }
 .divider {
   display: flex;
@@ -714,12 +728,45 @@ input {
   }
 }
 @media (max-width: 600px) {
-  .loginpage {
+  /* .loginpage {
     width: 100%;
-    height: 80vh; /* Adjust the height as needed */
+    height: 80vh;
     position: fixed;
 
     background-color: white;
-    /* z-index: 1000; */
+    
+  } */
+  .search-container {
+    display: none;
+  }
+  .create-account {
+    display: block;
+  }
+  .logo {
+    width: 40%;
+  }
+  #create_acc {
+    font-size: 4vw;
+  }
+  #fb {
+    font-size: 3vw;
+  }
+  #google {
+    font-size: 3.2vw;
+  }
+  #frgt_pass {
+    font-size: 4vw;
+  }
+  #auth_closelogin {
+    font-size: 4vw;
+  }
+  #auth_closesignup {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 1250px) {
+  .image-overlay {
+    top: 60%;
+    left: 25%;
   }
 }
