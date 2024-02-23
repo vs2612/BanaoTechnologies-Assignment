@@ -770,3 +770,9 @@ input {
     left: 25%;
   }
 }
+@media (max-width: 750px) {
+  .image-overlay {
+    top: 60%;
+    left: 35%;
+  }
+}
